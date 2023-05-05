@@ -1,0 +1,48 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "poppins"; 
+}
+.mainBoard{
+  width: 80vw;
+  height: 70vh;
+  background: black; 
+  
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  position: relative;
+}
+.mainBoard  .notesBoard{
+  width: 70vw;
+  height: 50vh;
+  background: rgb(216, 215, 214);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+}
+.mainBoard  .notesBoard .note{
+  width: calc(70vw  / 21);
+  height: 100%;
+  background-color: white;
+  border-right: 1px solid rgb(235, 233, 233);
+  transition: all 200ms ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.mainBoard  .notesBoard .note:hover{
+  scale: 1.05;
+ }
+ .mainBoard  .notesBoard .note  p{
+  position: absolute;
+  bottom: 1rem;
+ }
